@@ -1,0 +1,16 @@
+Pseudo code solution:
+
+BEGIN
+request user to input their name
+store name into variable called "firstName"
+	print "Hello "firstName""
+END
+
+
+BEGIN
+request user to input their age
+store age into a variable called "age"
+find the year the person was born
+store the year into a variable called "year"
+	print "Based on your age of "age", it looks like you were born in "year" "
+END

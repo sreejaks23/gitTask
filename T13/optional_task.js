@@ -1,0 +1,65 @@
+isPalindrome = (myString) => {
+    // Place your code here   
+    let len = myString.length;
+    let x = true;
+    let y = false;
+    for(i=0;i<len/2;i++)
+    {
+        if(myString[i] !== myString[len-1-i])
+        {
+            return y;
+        }
+        else
+        {
+            return x;
+        }
+    }
+}
+
+
+// DO NOT EDIT BELOW THIS LINE
+let testStrings = [
+    "The Quick Brown Fox Jumps Over The Lazy Dog",
+    "helloworld",
+    "tacocat",
+    "anna",
+    "racecar",
+    "dad",
+    "level",
+    "noon",
+    "rotator",
+    "tenet",
+    "saippuakivikauppias",
+    "hyperiondev",
+    "rhythms"
+]
+
+
+let correctStrings = [
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+]
+
+for (let strIdx = 0; strIdx < testStrings.length; strIdx++) {
+    let test = testStrings[strIdx];
+    let correct = correctStrings[strIdx];
+
+    let got = isPalindrome(test);
+
+    if (got == correct) {
+        console.log(`${strIdx + 1}: Testing ${test}: Correct!`);
+    } else {
+        console.log(`${strIdx + 1}: Testing ${test}: Wrong, got ${got}, expected ${correct}`);
+    }
+}

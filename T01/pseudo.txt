@@ -1,0 +1,21 @@
+Pseudo code solution:
+
+BEGIN
+request random letter from the user
+repeat until user inputs a number
+if the letter mathces with vowels
+	print total number of vowels
+END
+
+
+BEGIN
+read arbitrary number of integers
+	return average of all the even numbers
+	return average of all the odd numbers
+END
+
+	
+BEGIN
+read list of names
+	print names in alphabetical order
+END
